@@ -1,17 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id="app" class='container'>
+    <h1>Currency Conversion Rates</h1>
+    <div class="divider"></div>
+    <currency :data="data"></currency>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Currency from './components/Currency'
 
 export default {
   name: 'app',
+  props: ['data'],
   components: {
-    Hello
+    Currency
   }
 }
 </script>
@@ -21,8 +23,11 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+h1{
+  text-align: center;
+  font-size: 32px;
 }
 </style>
