@@ -2,7 +2,7 @@
   <div id="app" class='container'>
     <h1>Currency Conversion Rates</h1>
     <div class="divider"></div>
-    <currency :data="data"></currency>
+    <currency></currency>
   </div>
 </template>
 
