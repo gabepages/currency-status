@@ -1,0 +1,10 @@
+{
+ "name": "currency-status",
+ "version": "1.0.0",
+ "description": "Check currency rates",
+ "author": "Gabe Pages",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
