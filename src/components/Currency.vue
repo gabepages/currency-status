@@ -21,8 +21,8 @@ export default {
   data (){
     return{
       conversionData: [],
-      green: "green lighten-2",
-      red: "red lighten-2"
+      green: "green lighten-1",
+      red: "red lighten-1"
     }
   },
   created: function() {
