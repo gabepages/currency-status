@@ -26,7 +26,7 @@ export default {
     }
   },
   created: function() {
-    this.$http.get('http://api.fixer.io/latest?base=USD').then((response) => {
+    this.$http.get('https://api.fixer.io/latest?base=USD').then((response) => {
       this.conversionData = response.body;
     }, (response) => {
       alert("error", response);
