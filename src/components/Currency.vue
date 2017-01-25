@@ -33,7 +33,7 @@ export default {
   watch: {
     '$route' (to, from) {
       let baseCurrency = to.path.split('/')[1]
-      this.$http.get('http://api.fixer.io/latest?base=' + baseCurrency).then((response) => {
+      this.$http.get('https://api.fixer.io/latest?base=' + baseCurrency).then((response) => {
         this.conversionData = response.body;
       }, (response) => {
         alert("error", response);
