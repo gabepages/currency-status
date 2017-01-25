@@ -1,20 +1,16 @@
 <template>
   <div id="app" class='container'>
     <h1>Currency Conversion Rates</h1>
+
     <div class="divider"></div>
-    <currency></currency>
+    <router-view ></router-view>
   </div>
 </template>
 
 <script>
-import Currency from './components/Currency'
 
 export default {
-  name: 'app',
-  props: ['data'],
-  components: {
-    Currency
-  }
+  name: 'app'
 }
 </script>
 
